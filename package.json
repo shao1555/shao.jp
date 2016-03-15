@@ -1,0 +1,19 @@
+{
+  "name": "shao.jp",
+  "version": "1.0.0",
+  "description": "https://shao.jp/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shao1555/shao.jp.git"
+  },
+  "author": "shao",
+  "license": "CC-BY-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/shao1555/shao.jp/issues"
+  },
+  "homepage": "https://github.com/shao1555/shao.jp#readme"
+}
