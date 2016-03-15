@@ -1,0 +1,60 @@
+extends ../base/base.jade
+
+block head
+
+block content
+  .sixteen.columns
+    h1.remove-bottom(style='margin-top: 40px') shao.jp - Account information
+    h5 List of banking accounts for wire transfer to me.
+    hr
+  .two-third.column
+    h3 Banks
+    p 名義は "サワダ シヨウ" です
+    ul.square
+      li
+        strong 三井住友銀行
+        | : 北野支店 普通 580574
+      li
+        strong 住信SBIネット銀行
+        | : ミカン支店 普通 1065563
+      li
+        strong ゆうちょ銀行
+        | : 記号10080 番号99920731
+      li
+        strong シティバンク銀行
+        | : インターネット支店 普通 7328391
+      li
+        strong みずほ銀行
+        | : 八王子支店 普通 2026112
+      li
+        strong 三菱東京UFJ銀行
+        | : 八王子中央支店 普通 4887725
+      li
+        strong じぶん銀行
+        | : 08054201555 / サワ
+  .one-third.column
+    h3 Gifts
+    p 各種 Web サービスのギフト機能もご検討ください :
+    table
+      tr
+        th Amazon
+        td
+          a(href='https://www.amazon.co.jp/gp/registry/wishlist/1564GYE8KQ69L/?ie=UTF8&tag=1555info-22&linkCode=ur2&camp=247&creative=7399') Wishlist
+          |  (JP)
+      tr
+        th iTunes
+        td
+          span#ibf
+          script.
+            document.getElementById('ibf').innerHTML='funb@1555.vasb'.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+          |                       (
+          a(href='http://support.apple.com/kb/HT2736?viewlocale=ja_JP') details
+          | )
+      tr
+        th Facebook
+        td
+          a(href='https://www.facebook.com/about/gifts') Facebook Gifts
+  .sixteen.columns
+    hr
+    address © Sho Sawada
+    br
