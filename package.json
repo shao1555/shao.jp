@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/shao1555/shao.jp/issues"
   },
-  "homepage": "https://github.com/shao1555/shao.jp#readme"
+  "homepage": "https://github.com/shao1555/shao.jp#readme",
+  "dependencies": {
+    "browser-sync": "^2.11.1",
+    "event-stream": "^3.3.2",
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-minify-css": "^1.2.4"
+  }
 }
