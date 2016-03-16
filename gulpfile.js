@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var merge = require('event-stream').merge;
+var dotenv = require('dotenv').config();
 
 // browser-sync
 var browser = require('browser-sync');
@@ -23,6 +24,20 @@ gulp.task('minify-css', function(){
     .pipe(gulpMinifyCss({ compatibility: 'ie8' }))
     .pipe(gulp.dest('dist/css'))
     .pipe(browser.reload({ stream: true }))
+});
+
+// upload to S3
+var s3 = require('gulp-s3-upload')({
+  region: process.env.AWS_REGION,
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+});
+gulp.task('upload', function () {
+  return gulp.src('./dist/**')
+    .pipe(s3({
+       Bucket:  process.env.AWS_S3_BUCKET,
+       ACL: 'public-read'
+     }));
 });
 
 // default
