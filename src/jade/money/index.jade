@@ -5,6 +5,8 @@ block vars
   - var content = 'List of banking accounts for send money to me'
   - var bitcoin_address = '1LP16c8qfjiA1r1uHL8LDhxU57RrahzVCL'
   - var wechat_url = 'https://weixin.qq.com/r/Yo0nP9rEVocprZ5c99hw'
+  - var wepay_url = 'wxp%3A%2F%2Ff2f0XVB1qYU7BAcyXT2_RQIqtkNgeROoikV0'
+  - var line_url = 'http%3A%2F%2Fline.naver.jp%2Fti%2Fp%2FeHAbLsRw6Y'
 
 block head
 
@@ -66,22 +68,19 @@ block content
         td
           div
             code #{bitcoin_address}
-          img(src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=bitcoin:#{bitcoin_address}" width=120 height=120)
+          img(src="https://storage.googleapis.com/shao-storage-asia/qr/bitcoin-#{bitcoin_address}.png" width=120 height=120)
       tr
         th 微信支付 (WeChat Payment)
       tr
         td
-          | sho_sawada
+          img(src="https://storage.googleapis.com/shao-storage-asia/qr/WeChat-payment.png" width=120 height=120)
       tr
         th LINE Pay
       tr
         td
-          | shao1555
-      tr
-        th ドコモ口座
-      tr
-        td
-          | 0361559425037 / サワ
+          div
+            code shao1555
+          img(src="https://storage.googleapis.com/shao-storage-asia/qr/LINE-shao1555.png" width=120 height=120)
 
 
   .one-third.column

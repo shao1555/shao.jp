@@ -3,6 +3,8 @@ extends ./base/base.jade
 block vars
   - var title = 'shao.jp - Sho Sawada'
   - var content = 'Biography of Sho Sawada, a.k.a. shao'
+  - var wechat_url = 'https%3A%2F%2Fu.wechat.com%2FIKUFeA5ykuWUJQUYhJmS2Vg'
+  - var twitter_url = 'https%3A%2F%2Ftwitter.com%2Fshao1555'
 
 block head
 
@@ -21,39 +23,44 @@ block content
         th Location
         td Tokyo, Japan
       tr
-        th Birthday
-        td July 26, 1985
-      tr
-        th Facebook
-        td
-          a(href='https://www.facebook.com/sawada.sho') Sawada Sho
-      tr
         th Twitter
         td
-          a(href='https://twitter.com/shao1555') @shao1555
+          div
+            a(href='https://twitter.com/shao1555') @shao1555
+          img(src="https://storage.googleapis.com/shao-storage-asia/qr/twitter-shao1555.png" width=120 height=120)
+      tr
+        th GitHub
+        td
+          a(href='https://github.com/shao1555') shao1555
+      tr
+        th Slideshare
+        td
+          a(href='https://www.slideshare.net/shao1555') shao1555
       tr
         th Blog
         td
           a(href='http://shao.hateblo.jp/') http://shao.hateblo.jp/
           |  (lang:ja)
       tr
-        th GitHub
+        th BOOTH
         td
-          a(href='https://github.com/shao1555') shao1555
-      tr
-        th Amazon
-        td
-          a(href='https://www.amazon.co.jp/gp/registry/wishlist/1564GYE8KQ69L/?ie=UTF8&tag=1555info-22&linkCode=ur2&camp=247&creative=7399') Wishlist
-          |  (JP)
+          a(href='https://shao1555.booth.pm/') shao's book store
+          |  (マッハ新書)
       tr
         th Skills
         td
-          | Ruby, JavaScript (node.js), Golang, Swift, PHP, C, Java, Objective-C
+          | Blockchain: Bitcoin, Ethereum, dApp
+          br
+          | Ruby, JavaScript (node.js), Golang, Swift, PHP, C, Java, Swift, Objective-C
           br
           | Linux based Infrastructure, TCP/IP, Routing, Software Firewall, Load Balancing / HA
       tr
         th Hobby
         td Bicycle, Travel, Touring, Mobile Gadgets, Comics, Japanese Animation
+      tr
+        th Pay / Gift
+        td
+          a(href='/money/') see here
   .one-third.column
     h3 Biography
     p educations / work experiences :
@@ -82,30 +89,44 @@ block content
   .one-third.column
     h3 Contact
     p 急ぎであれば電話またはSMS、そうでない場合は Eメールか Facebook でお願い致します。
-    ul.square
-      li
-        strong
-          | email -&nbsp;
+    table
+      tr
+        th email
+        td
           span#obf
-          script.
-            document.getElementById('obf').innerHTML=' <n uers="znvygb:funb@1555.vasb">funb@1555.vasb</n>'.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
-        | : 筆無精です。数日たっても返信がない場合やお急ぎの場合は他の手段をご利用ください。
-      li
-        strong
-          | phone/SMS/iMessage -&nbsp;
-          a(href='tel:08054201555') 080-5420-1555
-        | : 電話に出ないときは SMS / iMessage または留守番電話センターをご利用ください。
-      li
-        strong
-          | Facebook -&nbsp;
-          a(href='http://www.facebook.com/sawada.sho/') SAWADA Sho
-        | : Facebook Messenger は応答率が高いです。
-      li
-        strong LINE - shao1555
-        | : 比較的はやいですが、ログインしている電話機を忘れた日など、1日中返せないことがあります。
-      li
-        strong Skype - shao1555
-        | : 普段ログインしていませんので、用事がある場合は他の手段で事前に連絡をしてください。
+            script.
+              document.getElementById('obf').innerHTML=' <n uers="znvygb:funb@1555.vasb">funb@1555.vasb</n>'.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+          p 筆無精です。数日たっても返信がない場合やお急ぎの場合は他の手段をご利用ください。
+      tr
+        th phone
+        td
+          div
+            a(href='tel:08054201555') 080-5420-1555
+          p 
+            | iMessage / SMS もこちらへ。  
+      tr
+        th Messenger
+        td
+          div
+            a(href='https://www.facebook.com/sawada.sho') sawada.sho
+          img(src="https://storage.googleapis.com/shao-storage-asia/qr/messenger-code.jpeg" width=120 height=120)
+          p 
+            | Facebook Messenger は応答率が高いです。
+      tr
+        th WeChat
+        td
+          div
+            | sho_sawada
+          img(src="https://storage.googleapis.com/shao-storage-asia/qr/WeChat-sho_sawada.png" width=120 height=120)
+          p 
+            | こちらもは応答率が高いです。
+      tr
+        th Skype
+        td
+          div
+            | shao1555
+          p 
+            | 普段ログインしていませんので、用事がある場合は他の手段で事前に連絡をしてください。
     p
       | If you can not speak Japanese, please contact me via&nbsp;
       span#asx
